@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ViaCEP Response Schema",
+  "type": "object",
+  "properties": {
+    "cep": { "type": "string", "pattern": "^\\d{5}-\\d{3}$" },
+    "logradouro": { "type": "string" },
+    "complemento": { "type": "string" },
+    "bairro": { "type": "string" },
+    "localidade": { "type": "string" },
+    "uf": { "type": "string", "minLength": 2, "maxLength": 2 },
+    "ibge": { "type": "string" },
+    "gia": { "type": "string" },
+    "ddd": { "type": "string" },
+    "siafi": { "type": "string" }
+  },
+  "required": ["cep", "logradouro", "localidade", "uf"]
+}
