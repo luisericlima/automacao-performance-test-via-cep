@@ -19,7 +19,7 @@ Este projeto demonstra a implementação de testes automatizados para APIs RESTf
 trabalho-restassured/
 ├── .github/
 │   └── workflows/
-│       └── maven.yml         # Configuração do GitHub Actions
+│       └── maven.yml    # Configuração do GitHub Actions
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -33,9 +33,13 @@ trabalho-restassured/
 │               └── ViaCepApiTest.java  # Testes automatizados com RestAssured
 │       └── resources/
 │           └── viacep-schema.json    # Schema JSON para validação
-├── pom.xml                   # Arquivo de configuração do Maven
-├── load_test.jmx             # Script de teste de carga do JMeter
-└── README.md                 # Este arquivo
+├── pom.xml    # Arquivo de configuração do Maven
+├── jmeter_teste_perfomance/                   
+│   ├── load_test.jmx    # Script de teste de carga do JMeter
+│   ├── docker-compose.yml    # Configuração ambiente docker
+│   └── README.md    # Documentação teste de carga e ambiente necessário
+├── .gitignore    # Arquivos ignorados
+└── README.md    # Este arquivo
 ```
 
 ## ⚙️ Configuração e Execução
